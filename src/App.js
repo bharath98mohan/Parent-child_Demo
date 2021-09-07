@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Parent from './components/parentToChild/parent'
+import Child from './components/parentToChild/child'
+import ParentA from './components/childToParent/parent'
+import ChildA from './components/childToParent/child'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Parent />
+      <Child />
+      <ParentA />
+      <ChildA />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
